@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <div><i onclick="goPrevious()" id="previous" class="fa-solid fa-circle-chevron-left"></i></div>
+        <img src="images/1.jpeg" id="fullImg" class="scroll-img"/>
+        <span onclick="closeFullImg()">X</span>
+        <div><i onclick="goNext()" id="next" class="fa-solid fa-circle-chevron-right"></i></div>
+
+    </div>
+    <h1>Welcome To My Image-Gallery</h1>
+    <div class="img-gallery">
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/1.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+        <input type="checkbox" class="checkbox">
+            <img src="images/2.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class="delete-icon"><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/3.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/4.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/5.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/6.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/7.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)"  class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/8.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/9.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/10.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/11.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>
+        <div class="image-container">
+            <input type="checkbox" class="checkbox">
+            <img src="images/12.jpeg" onclick="openFullImg(this.src)" class="image">
+            <span onclick="deleteImage(this)" class = 'delete-icon'><i class="fa-solid fa-trash-can"></i></span>
+            <div class="info">Check this to delete this image</div>
+        </div>   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

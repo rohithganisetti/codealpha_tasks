@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+h1{
+    border:4px dashed red;
+    display: flex;
+    background-color: #555;
+    padding:10px;
+    color: #fff;
+    font-size:50px;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+.img-gallery{
+    width:85%;
+    margin:60px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+}
+.img-gallery img{
+    width:250px;
+    cursor: pointer;
+    height:250px;
+    object-fit:cover;
+    border: 1px solid gray;
+}
+.image{
+    transition: transform 0.4s;
+}
+.image:hover{
+    transform:scale(1.1);
+}
+.full-img{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    background-color: beige;
+    top:0;
+    left:0; 
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index:100;
+}
+.full-img img{
+    border: 3px solid gray;
+    width:80%;
+    max-width:500px;
+    height:600px;
+    object-fit: cover;
+}
+#next,#previous {
+    height:10px;
+    color: gray;
+    width:10px;
+    font-size: 40px;
+    margin:100px;
+}
+#previous {
+    margin-right: 130px;
+}
+#next:hover,#previous:hover{
+    color:black;
+    cursor: pointer;
+}
+
+.full-img span{
+    position: absolute;
+    top:5%;
+    right:10%;
+    font-size:30px;
+    cursor: pointer;
+    font-family: 'Lucida Sans';
+}
+.img-gallery span{
+    position: absolute;
+    top:5%;
+    right:20%;
+    background-color: beige;
+    font-size:25px;
+    cursor: pointer;
+}
+.checkbox {
+    text-align: left;
+    bottom:20px;
+    right:60px;
+    position: absolute;
+    height:20px;
+    width:20px;
+    z-index: 1;
+}
+input[type="checkbox"]{
+    accent-color: aqua;
+}
+input[type="checkbox"]:hover{
+    accent-color: red;
+
+}
+.delete-icon{
+    display: none;
+} 
+.checkbox:checked ~ .delete-icon {
+    display: block;
+    font-family: 'Lucida Sans';
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}   
+.info {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 12; 
+    left: 50%;
+    margin-left: 100px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.image-container:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
